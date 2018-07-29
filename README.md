@@ -8,12 +8,13 @@ Comando no CMD depois da instalação do Python: pip install sqlite3     (Instal
 Sistema Simples Desktop de Venda de Livro com TKinter, Python e SQLite.
 Objetivo do sistema é adicionar venda, excluir venda, alterar venda, excluir a venda, e consultar as vendas realizadas.
 
-1 - Arquivo Login.py, é uma tela de login simples, que comecei fazendo enquanto esperava um voô para floripa.(Descartar esse arquivo, foi a primeira tela de login de teste)
 
-2 - Arquivo LoginNew.py, é uma tela de login um pouco mais robusta, onde podemos criar, e armazenar novas contas no SQLite.
+1 - Para executar o projeto, basta clonar o projeto com git clone, ou fazer o download do projeto, e para rodar, basta instalar o Python, e no terminal ou cmd, na pasta do arquivo, executar
+o seguinte comando: python LoginNew.py, a partir daí a aplicação abrirá a tela de login, e a partir da autenticação o sistema abrirá.(Criar usuário e senha, e depois logar)
 
-3 - Para executar o projeto, basta clonar o projeto com git clone, ou fazer o download do arquivo .py, e para rodar, basta instalar o Python, e no terminal ou cmd, na pasta do arquivo, executar
-o seguinte comando: python LoginNew.py após isso a aplicação irá rodar e aparecer na tela.
+2 - Arquivo Login.py, é uma tela de login simples, que comecei fazendo enquanto esperava um voô para floripa.(Descartar esse arquivo, foi a primeira tela de login de teste)
+
+3 - Arquivo LoginNew.py, é uma tela de login um pouco mais robusta, onde podemos criar, e armazenar novas contas no SQLite.
 
 4 - Arquivo frontend.py, é o arquivo onde foi desenvolvido a parte de interface da aplicação, utilizando TKinter. Esse arquivo será chamado pelo LoginNew, depois que o metodo login() tiver o return da autenticação.
 
