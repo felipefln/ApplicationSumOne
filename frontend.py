@@ -2,6 +2,7 @@ from tkinter import *
 import backend
 
 window=Tk()
+connect()
 
 l1 = Label(window, tex="Title")
 l1.grid(row=0, column=0)
@@ -42,22 +43,22 @@ sb1.grid(row=2,column=1,rowspan=6)
 list1.configure(yscrollcomand=sb1.set)
 sb1.configure(command=list1.yview)
 
-b1=Button(window, text="View All", width=12)
+b1=Button(window, text="View All", width=12, command=self.view)
 b1.grid(row=2,column=3)
 
-b2=Button(window, text="Search Entry", width=12)
+b2=Button(window, text="Search Entry", width=12, command=self.search)
 b2.grid(row=3,column=3)
 
-b3=Button(window, text="Add Entry", width=12)
+b3=Button(window, text="Add Entry", width=12, command=self.insert)
 b3.grid(row=4,column=3)
 
-b4=Button(window, text="Update Selected", width=12)
+b4=Button(window, text="Update Selected", width=12, command=self.update)
 b4.grid(row=5,column=3)
 
-b5=Button(window, text="Delete Selected", width=12)
+b5=Button(window, text="Delete Selected", width=12, command=self.delete)
 b5.grid(row=6,column=3)
 
-b6=Button(window, text="View All", width=12)
+b6=Button(window, text="View All", width=12, command=self.view)
 b6.grid(row=7,column=3)
 
 
