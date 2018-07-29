@@ -1,6 +1,6 @@
 import sqlite3
 
-class main():
+class books():
 	def __init__:
 		self.title = title
 		self.author = author
@@ -52,6 +52,9 @@ class main():
 		conn.commit()
 		conn.close()
 		return rows
+		
+		
+	
 	
 	
 	
