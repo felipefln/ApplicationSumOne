@@ -8,7 +8,7 @@ class books():
 		self.prince = prince
 
 	def connect(self):
-		conn=sqlite3.connect("books.db")
+		conn=sqlite3.connect("book.db")
 		cur.conn.cursor()
 		cur.execute("CREATE TABLE IF NOT EXIST book (id INTERGER PRIMARY KEY, title text, author text, year text, prince text"))
 		conn.commit()
@@ -16,16 +16,16 @@ class books():
 		
 		
 	def insert(self.title,self.author, self.year,self.prince):
-		conn=sqlite3.connect("books.db")
+		conn=sqlite3.connect("book.db")
 		cur=conn.cursor()
 		cur.execute("INSERT INTO book VALUES (NULL, ?, ?, ?, ?)", (title, author, year, prince))
 		conn.commit()
 		conn.close()
 		
 	def view():
-		conn=sqlite3.connect("books.db")
+		conn=sqlite3.connect("book.db")
 		cur=conn.cursor()
-		cur.execute("SELEC * FROM books")
+		cur.execute("SELEC * FROM book")
 		rows=cur.fetchall()
 		conn.close()
 		return rows
